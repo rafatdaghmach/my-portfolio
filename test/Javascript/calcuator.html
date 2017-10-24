@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Calculator</title>
+</head>
+
+<body>
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button>
+  <br><br>
+  <div id="solution1"></div>
+  <div id="solution2"></div>
+  <div id="solution3"></div>
+  <div id="solution4"></div>
+<script>
+
+function squareNumber() {
+    var result = document.getElementById("solution1");
+    var num = document.getElementById("square-input").value;
+    result.innerHTML = "The squre of the number is:    " + (num * num);
+}
+
+var squarButton = document.getElementById("square-button");
+squarButton.addEventListener('click', squareNumber);
+
+function halfTheNum () {
+    var result = document.getElementById("solution2");
+    var num = document.getElementById("half-input").value;
+    result.innerHTML = "The half of the number is:   " + (num/2);
+}
+var halfButton = document.getElementById("half-button");
+    halfButton.addEventListener('click', halfTheNum);
+
+function percent() {
+    var result = document.getElementById("solution3");
+    var num1 = document.getElementById("percent1-input").value;
+    var num2 = document.getElementById("percent2-input").value;
+    result.innerHTML = "The first number is   " + (num1/num2 * 100) + " % of the second number" ; 
+}
+var percentButton = document.getElementById("percent-button");
+    percentButton.addEventListener('click', percent);
+    
+function area() {
+    var result = document.getElementById("solution4");
+    var num = document.getElementById("area-input").value;
+    result.innerHTML = "The area of the circle is: " + (Math.PI * num * num); 
+}
+var areaButton = document.getElementById("area-button");
+    areaButton.addEventListener('click', area);
+
+</script>
+</body>
+
+</html>

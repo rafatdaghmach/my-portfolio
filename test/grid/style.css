@@ -1,0 +1,24 @@
+ /* =============================================================================
+	PARTICLES | MADAM MONOROM | monorom.com | HTML5 & CSS Project
+	This project is licensed under the MIT License 
+	(https://opensource.org/licenses/MIT) Copyright (c) 2016 monorom.com
+
+	CONTENTS
+	- Container
+	- Row
+	- Space
+	- Col
+   ========y=====================================================================*/ 
+
+@import url(particles-grid.css);
+html {
+    font-size: 100%;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+div {
+    border: solid black 1px;
+}

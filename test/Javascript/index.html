@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rafat daghmach</title>
+    <style>
+        .list-item { color: sandybrown};
+    </style>
+</head>
+<body>
+    <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+  </ul>
+  <ul id = "my_books">
+      
+  </ul>
+       
+    <script>
+    document.body.style.fontFamily = "Arial, sans-serif";
+    document.getElementById('nickname').innerHTML = 'Rafat';
+    document.getElementById('favorites').innerHTML = 'Zurich';
+    document.getElementById('hometown').innerHTML = 'Damascus';
+    var toLoop = document.querySelectorAll('li');
+    for (var i = 0; i < toLoop.length; i++ ) {
+    toLoop[i].className = "list-item"; 
+    }
+    var picture = document.createElement('img');
+        picture.src = "https://andypi.co.uk/wp-content/uploads/2016/08/js4560_450.png";
+    document.body.appendChild(picture);
+      /*var books = [
+    {
+      title: 'The Design of EveryDay Things',
+      author: 'Don Norman',
+      alreadyRead: false
+    }, {
+      title: 'The Most Human Human',
+      author: 'Brian Christian',
+      alreadyRead: true
+    }
+  ];
+     for (i = 0, i < books.length, i++) {
+        document.querySelector('.my_books').innerHTML += "<li>books[i].title</li>";
+    }*/
+    </script>
+</body>
+</html>
